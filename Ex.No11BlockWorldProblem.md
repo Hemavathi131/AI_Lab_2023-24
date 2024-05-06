@@ -17,7 +17,7 @@ Step 10 : Obtain the plan for given problem.<br>
      
 ### Program:
 
-/*
+```/*
 (define (domain blocksworld)
 (:requirements :strips :equality)
 (:predicates (clear ?x)
@@ -42,13 +42,16 @@ Step 10 : Obtain the plan for given problem.<br>
 (not (clear ?underob)) (not (holding ?ob))))
 (:action unstack
 :parameters (?ob ?underob)
+*/
+```
 ### Input 
+```
 /*
 :precondition (and (on ?ob ?underob) (clear ?ob) (arm-empty))
 :effect (and (holding ?ob) (clear ?underob)
 (not (on ?ob ?underob)) (not (clear ?ob)) (not (armempty)))))
 */
-
+```
 ### Output/Plan:
 ![image](https://github.com/Hemavathi131/AI_Lab_2023-24/assets/128135323/f1001ccd-93ee-4cbb-86f3-fa873352cd56)
 
